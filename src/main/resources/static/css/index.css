@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: rgb(23, 148, 148);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(124, 123, 123);
+}
+.header-left, .header-right {
+    padding: 10px;
+}
+.header-right > i {
+    padding: 10px;
+    font-size: 30px;
+}
+.nav-side-menu {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(151, 201, 201);
+    border-bottom: 1px solid rgb(124, 123, 123);
+}
+.menu-user {
+    background-color: rgb(242, 150, 150);
+}
+.avatar-user {
+    width: 100px;
+}
+.user-info {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
