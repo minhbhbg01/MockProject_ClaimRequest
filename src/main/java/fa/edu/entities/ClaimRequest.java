@@ -13,7 +13,7 @@ public class ClaimRequest {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String status;
-    private Date createDate;
+    private Date claimDate;
     private String Day;
     private Date fromDate;
     private Date toDate;
