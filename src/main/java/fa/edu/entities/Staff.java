@@ -21,6 +21,7 @@ public class Staff {
     private String rank;
     private Double Salary;
     private String department;
+    private RoleEnum role;
     @OneToMany(mappedBy = "staff")
     private List<ClaimRequest> claimRequests = new ArrayList<>();
 
