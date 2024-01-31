@@ -1,0 +1,42 @@
+.content {
+    display: flex;
+    width: 97%;
+}
+.content > div {
+    width: 25%;
+    margin-right: 20px;
+}
+.form-group {
+    width: 50%;
+}
+.btn-all {
+    margin-top: 20px;
+}
+ul,li {
+    text-decoration: none !important;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+    width: 100%;
+}
+.dropdown a {
+    display: block;
+    width: 100%;
+}
+.menu {
+    padding: 10px;
+}
+li {
+    padding-left: 10px;
+}
+li:hover {
+    background-color: rgb(218, 220, 219);
+}
+.staff-info:hover {
+    background-color: rgb(218, 220, 219);
+}
+.menu > div {
+    border-bottom: 1px solid rgb(145, 144, 142);
+    padding-bottom: 10px;
+}

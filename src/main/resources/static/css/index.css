@@ -17,7 +17,6 @@ body {
 }
 .nav-side-menu {
     width: 300px;
-    height: 100vh;
     background-color: rgb(151, 201, 201);
     border-bottom: 1px solid rgb(124, 123, 123);
 }
@@ -30,4 +29,12 @@ body {
 .user-info {
     padding-left: 20px;
     padding-bottom: 10px;
+}
+.main {
+    display: flex;
+    height: 100vh;
+}
+.main-content {
+    width: 100%;
+    padding: 20px;
 }

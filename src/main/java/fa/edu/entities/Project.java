@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -16,8 +17,11 @@ public class Project {
     @Column(name = "project_id")
     private Integer id;
     private String nameProject;
+    private String projectCode;
     private String duration;
-    private String roleProject;
+    private Date startDate;
+    private Date endDate;
+    private String roleStaff;
     @OneToMany(mappedBy = "project")
     List<Staff> staff =new ArrayList<>();
 }
