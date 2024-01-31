@@ -9,4 +9,12 @@ public class AdminController {
     public String adminPage() {
         return "admin";
     }
+    @GetMapping("/project")
+    public String projectPage() {
+        return "project";
+    }
+    @GetMapping("/claim")
+    public String claimPage() {
+        return "claim";
+    }
 }
