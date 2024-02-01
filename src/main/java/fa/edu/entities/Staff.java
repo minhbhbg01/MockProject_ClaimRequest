@@ -16,11 +16,12 @@ public class Staff {
     @Column(name = "staff_id")
     private Integer id;
     private String name;
+    private String email;
     private String rank;
     private Double Salary;
     private String department;
     private String password;
-    private RoleEnum roleEnum = RoleEnum.ROLE_STAFF;
+    private RoleEnum roleEnum;
     @OneToMany(mappedBy = "staff")
     private List<ClaimRequest> claimRequests = new ArrayList<>();
 
