@@ -21,11 +21,9 @@ public class Staff {
     private Double Salary;
     private String department;
     private String password;
-    private RoleEnum roleEnum;
     @OneToMany(mappedBy = "staff")
     private List<ClaimRequest> claimRequests = new ArrayList<>();
 
-    @ManyToOne
-    @JoinColumn(name = "project_id")
-    private Project project;
+    @ManyToMany(mappedBy = "staff")
+    List<Project> projects = new ArrayList<>();
 }

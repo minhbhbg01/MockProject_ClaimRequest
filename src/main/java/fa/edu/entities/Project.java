@@ -21,7 +21,19 @@ public class Project {
     private String duration;
     private Date startDate;
     private Date endDate;
-    private String roleStaff;
-    @OneToMany(mappedBy = "project")
-    List<Staff> staff =new ArrayList<>();
+    private String pm;
+    private String qa;
+    private String technicalLead;
+    private String ba;
+    private String developer;
+    private String test;
+    private String technicalConsultancy;
+    private String finance;
+    @ManyToMany
+    @JoinTable(
+            name = "project_staff",
+            joinColumns = @JoinColumn(name = "project_id"),
+            inverseJoinColumns = @JoinColumn(name = "staff_id")
+    )
+    List<Staff> staff = new ArrayList<>();
 }
