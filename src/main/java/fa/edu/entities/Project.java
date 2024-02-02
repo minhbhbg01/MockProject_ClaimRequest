@@ -29,4 +29,7 @@ public class Project {
     private String test;
     private String technicalConsultancy;
     private String finance;
+    @OneToMany(mappedBy = "project")
+    private List<ClaimRequest> claimRequests = new ArrayList<>();
+
 }

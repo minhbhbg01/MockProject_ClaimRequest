@@ -18,9 +18,10 @@ public class Staff {
     private String name;
     private String email;
     private String rank;
-    private Double Salary;
+    private Double salary;
     private String department;
     private String password;
+    private String rePassword;
     @OneToMany(mappedBy = "staff")
     private List<ClaimRequest> claimRequests = new ArrayList<>();
 }

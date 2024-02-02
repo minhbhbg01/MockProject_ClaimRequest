@@ -22,4 +22,8 @@ public class ClaimRequest {
     @ManyToOne
     @JoinColumn(name = "staff_id")
     private Staff staff;
+    @ManyToOne
+    @JoinColumn(name = "project_id")
+    private Project project;
+
 }
