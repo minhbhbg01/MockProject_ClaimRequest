@@ -29,11 +29,4 @@ public class Project {
     private String test;
     private String technicalConsultancy;
     private String finance;
-    @ManyToMany
-    @JoinTable(
-            name = "project_staff",
-            joinColumns = @JoinColumn(name = "project_id"),
-            inverseJoinColumns = @JoinColumn(name = "staff_id")
-    )
-    List<Staff> staff = new ArrayList<>();
 }

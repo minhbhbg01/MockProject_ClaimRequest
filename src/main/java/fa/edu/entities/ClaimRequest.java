@@ -18,6 +18,7 @@ public class ClaimRequest {
     private Date fromDate;
     private Date toDate;
     private Integer totalHours;
+    private String remarks;
     @ManyToOne
     @JoinColumn(name = "staff_id")
     private Staff staff;

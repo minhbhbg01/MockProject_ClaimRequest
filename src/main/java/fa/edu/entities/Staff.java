@@ -23,7 +23,4 @@ public class Staff {
     private String password;
     @OneToMany(mappedBy = "staff")
     private List<ClaimRequest> claimRequests = new ArrayList<>();
-
-    @ManyToMany(mappedBy = "staff")
-    List<Project> projects = new ArrayList<>();
 }
